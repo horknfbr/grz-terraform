@@ -1,0 +1,94 @@
+{
+  "categories": {
+    "Stats": {
+      "short": "stats",
+      "emote": "📊",
+      "notrans": true,
+      "channels": {}
+    },
+    "Information": {
+      "short": "info",
+      "emote": "ℹ",
+      "notrans": true,
+      "channels": {
+        "Announcements": {
+          "short": "announce"
+        },
+        "Rules": {
+          "short": "rules"
+        },
+        "Welcome": {
+          "short": "welcome"
+        }
+      }
+    },
+    "Guests": {
+      "short": "guest",
+      "emote": "💬",
+      "channels": {
+        "Public": {
+          "short": "public"
+        }
+      }
+    },
+    "Internal Chat": {
+      "short": "harchat",
+      "emote": "⛔️",
+      "channels": {
+        "general": {
+          "short": "gen"
+        }
+      }
+    },
+    "Internal Information": {
+      "short": "intinfo",
+      "emote": "🏫",
+      "channels": {
+        "Knowlegebase": {
+          "short": "kb"
+        },
+        "Formations": {
+          "short": "form"
+        }
+      }
+    },
+    "Internal Alerts": {
+      "short": "intalert",
+      "emote": "🚨",
+      "channels": {
+        "Attack Warning": {
+          "short": "aw"
+        },
+        "Activities": {
+          "short": "active"
+        }
+      }
+    },
+    "Logs and Testing": {
+      "short": "logs",
+      "emote": "🥁",
+      "notrans": true,
+      "channels": {
+        "translator-log": {
+          "short": "tran"
+        },
+        "dyno": {
+          "short": "dyno"
+        }
+      }
+    }
+  },
+  "languages": {
+    "english": "english",
+    "русский": "russian",
+    "tiếng-việt": "vietnamese",
+    "türkçe": "turkish",
+    "deutsche": "german",
+    "ภาษาไทย": "thai",
+    "español": "spanish",
+    "日本語": "japanese",
+    "中文語": "chinese",
+    "한국말": "korean",
+    "اَلْعَرَبِيَّةُ": "Arabic"
+  }
+}
