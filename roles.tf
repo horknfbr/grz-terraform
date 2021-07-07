@@ -17,24 +17,14 @@ data discord_role r3 {
   name      = "R3"
 }
 
-data discord_role har {
+data discord_role members {
   server_id = data.discord_server.discord_api.id
-  name      = "Harbinger"
+  name      = "Members"
 }
 
 data discord_role bots {
   server_id = data.discord_server.discord_api.id
   name      = "Bots"
-}
-
-data discord_role wr5 {
-  server_id = data.discord_server.discord_api.id
-  name      = "426-R5"
-}
-
-data discord_role allies {
-  server_id = data.discord_server.discord_api.id
-  name      = "426-Alliances"
 }
 
 data discord_role everyone {

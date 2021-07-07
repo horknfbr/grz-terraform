@@ -16,9 +16,9 @@ GUILD = os.getenv('DISCORD_GUILD')
 
 sql = "INSERT INTO tasks (reply, active, server, origin, dest, \"LangTo\", "\
       "\"LangFrom\", \"createdAt\", \"updatedAt\") VALUES ('R', True, %s, %s, %s, "\
-      "%s, %s, %s, %s)"
+      "%s, %s, %s, %s) ON CONFLICT DO NOTHING"
 
-layouFile = './layout.json'
+layouFile = './json/layout.json'
 serverid = 0
 allChans = {}
 dt = datetime.now(timezone.utc)
@@ -88,9 +88,15 @@ def buildsql(layOut):
                                     dt,
                                     dt
                                     )
-                            print(f"{c}: Inserting {sourceChan}-{sourceLang}"
-                                  f" -> {destChan}-{destLang} ")
-                            cur.execute(sql, data)
+                            
+                            try:
+                                cur.execute(sql, data)
+                                print(f"{c}: Inserted {sourceChan}-{sourceLang}"
+                                      f" -> {destChan}-{destLang} ")
+                            except psycopg2.errors.UniqueViolation:
+                                print(f"{c}: {sourceChan}-{sourceLang}"
+                                      f" -> {destChan}-{destLang} Exsists")
+                                
                             c += 1
     conn.commit()
     cur.close()

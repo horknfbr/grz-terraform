@@ -3,7 +3,7 @@ terraform {
     organization = "harbingers"
 
     workspaces {
-      name = "har-terraform"
+      name = "grz-terraform"
     }
   }
 

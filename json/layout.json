@@ -32,7 +32,7 @@
       }
     },
     "Internal Chat": {
-      "short": "harchat",
+      "short": "intchat",
       "emote": "⛔️",
       "channels": {
         "general": {
@@ -56,11 +56,29 @@
       "short": "intalert",
       "emote": "🚨",
       "channels": {
-        "Attack Warning": {
+        "Attack-Warning": {
           "short": "aw"
         },
         "Activities": {
           "short": "active"
+        }
+      }
+    },
+    "Leadership": {
+      "short": "leaders",
+      "emote": "🔪",
+      "channels": {
+        "r4": {
+          "short": "r4"
+        }
+      }
+    },
+    "Cabinet": {
+      "short": "cab",
+      "emote": "🎂",
+      "channels": {
+        "r3-r5": {
+          "short": "r3"
         }
       }
     },
@@ -69,11 +87,17 @@
       "emote": "🥁",
       "notrans": true,
       "channels": {
-        "translator-log": {
-          "short": "tran"
-        },
-        "dyno": {
-          "short": "dyno"
+        "moderator-only": {
+          "short": "mods"
+        }
+      }
+    },
+    "Private": {
+      "short": "private",
+      "emote": "🙈",
+      "channels": {
+        "chilling": {
+          "short": "chilling"
         }
       }
     }
@@ -84,6 +108,7 @@
     "tiếng-việt": "vietnamese",
     "türkçe": "turkish",
     "deutsche": "german",
+    "ˈpɔlskʲi": "polish",
     "ภาษาไทย": "thai",
     "español": "spanish",
     "日本語": "japanese",
